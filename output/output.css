@@ -748,6 +748,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 768px;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-\[138px\] {
   width: 138px;
 }
@@ -778,10 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[331px\] {
   width: 331px;
-}
-
-.w-44 {
-  width: 11rem;
 }
 
 .max-w-\[1656\] {
@@ -858,12 +858,12 @@ Ensure the default browser behavior of the `hidden` attribute.
           appearance: none;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-footer {
   grid-template-columns: 200px minmax(900px, 1fr) 100px;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1163,6 +1163,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[240px\] {
   padding-bottom: 240px;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
+}
+
+.pb-\[162px\] {
+  padding-bottom: 162px;
 }
 
 .font-body {
