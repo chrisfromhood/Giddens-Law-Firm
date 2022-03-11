@@ -1,0 +1,840 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output/output.css">
+  <title>Giddens Law Firm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+
+      },
+    }
+  </script>
+</head>
+
+<body class="font-body leading-snug">
+
+  <!-- HEADER SECTION -->
+  <section class="bg-primary">
+    <div class="container w-full max-w-[1656] my-0 mx-auto ">
+      <header class="flex h-[100px] justify-between">
+
+        <div class="flex items-center flex-shrink-0 my-[37px]">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="432" height="26">
+            <image data-name="Giddens Law Firm PA_ Mississippi Personal Injury Lawyers _ Car, Truck Accidents"
+              width="432" height="26"
+              xlink:href="data:image/png;base64,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" />
+          </svg>
+        </div>
+
+        <nav class="flex items-center justify-between flex-wrap bg-primary">
+
+          <div class="block lg:hidden">
+            <button
+              class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-lg lg:flex-grow">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-light  mr-10">
+                About Us
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-light  mr-10">
+                Unum Claims
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-light  mr-10">
+                Our Area of Practice
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-light  mr-10">
+                Articles
+              </a>
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-secondary">
+                Contact Us
+              </a>
+            </div>
+          </div>
+
+        </nav>
+
+      </header>
+    </div>
+  </section>
+
+
+  <!-- HERO SECTION -->
+  <section class=" relative bg-[url('/img/pic1.jpg')] bg-no-repeat bg-center bg-cover h-[960px]">
+    <div class="container max-w-full">
+
+      <div class="absolute bottom-[-20px] left-[180px]">
+        <div class="w-[768px] min-h-fit rounded p-20 bg-primary ">
+          <h1 class="font text-7xl font-judson text-light">Giddens Law Firm - <span class="text-secondary">Proven
+              Results!</span> </h1>
+          <div class="mr-[200px]">
+            <p class=" text-light mt-6 mb-12">Giddens Law Firm, P.A. has built an exceptional reputation throughout
+              the state
+              of Mississippi
+              for
+              relentless
+              pre-trial
+              preparation, case investigation, and use of the latest technologies resulting in
+              <span class="text-secondary">many significant jury awards and verdicts. </span>
+            </p>
+            <div class="mt-6">
+              <a href="#"
+                class="flex items-center justify-center rounded-md border border-transparent bg-secondary px-[135px] py-4 text-base font-medium text-[#242424] shadow-sm hover:bg-[#FFE785]">Get
+                a Consultation</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="bg-secondary font-judson text-light grid-cols-footer w-44">
+          12222222
+        </div>
+  </section>
+
+  <!-- VERDICTS & SETTLEMENTS SECTION -->
+  <section class="bg-primary relative">
+    <div class="container w-full max-w-[1400px] my-0 mx-auto">
+
+      <div class="flex flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex font-judson text-6xl text-light mt-9">Verdicts & Settlements</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!-- 3 COL OF FEATURES -->
+        <div class="flex flex-wrap justify-around mt-[55px]">
+          <div class="text-light flex flex-col pl-3">
+            <h4 class="text-3xl">Breach of Trust</h4>
+            <span class="text-secondary text-6xl mt-1 mb-4">$6.5 <br>
+              Million</span>
+            <p class="text-base">Bench verdict in a breach of trust case.</p>
+          </div>
+
+          <div class="text-light flex flex-col pl-3">
+            <h4 class="text-3xl">Surgical</h4>
+            <span class="text-secondary text-6xl mt-1 mb-4">$1.8 <br>
+              Million</span>
+            <p class="text-base">Jury verdict for unnecessary brain surgery.</p>
+          </div>
+
+          <div class="text-light flex flex-col pl-3">
+            <h4 class="text-3xl">Personal</h4>
+            <span class="text-secondary text-6xl mt-1 mb-4">$1.02 <br>
+              Million</span>
+            <p class="text-base">Jury award for a pharmacy error injury.</p>
+          </div>
+
+        </div>
+        <!--BORDERED-RIGHT-SIDE FEATURE -->
+        <div
+          class="flex flex-col mt-16 mb-20 w-[1220px] border-secondary border-t-4 border-b-4 border-l-4 h-[280px] absolute right-0">
+          <div class="text-light text-4xl mt-10 ml-10 mb-8">
+            <h3><b class="text-secondary">Time is limited</b> to file <br> your claim.</h3>
+          </div>
+          <div class="flex ml-10 mb-14  text-light text-base">
+            <p>So please call us today for a <b class="text-secondary">FREE</b> legal <br> consultation and case
+              analysis.
+            </p>
+            <p class="ml-[153px]">Free Case Review – <br> Call <b class="text-secondary">(601) 355-2022</b></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="bg-primary">
+    <div class="container w-full max-w-[1400px] my-0 mx-auto">
+
+      <!--YOUTUBE VIDEO WRAPPER -->
+      <div class="flex flex-col justify-center items-center">
+
+        <!--YOUTUBE LABEL -->
+        <div class="inline-flex  text-light text-base py-2">
+          <p>Watch video to learn more about us</p>
+          <div class="flex ml-2 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+              <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                transform="translate(8750 4)" fill="#f8bb08" />
+            </svg>
+          </div>
+        </div>
+
+        <!--YOUTUBE VIDEO -->
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe width="1440" height="788" src="https://www.youtube.com/embed/0hI5R0Srw9c" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AWARDS & ASSOCIATIONS -->
+  <section class="relative bg-#FAFAFA">
+    <div class="container w-full max-w-[1480px] my-0 mx-auto px-2">
+
+      <div class="flex flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex font text-6xl  text-primary mt-9">Awards & Associations</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!-- AWARDS -->
+        <div class="pb-[90px] pt-[35px] pl-[39px]">
+          <div class="flex flex-wrap">
+            <div class="mr-[39px]">
+              <img src="./img/awards/1.png" alt="Avvo">
+            </div>
+            <div class="mr-[39px]">
+              <img src="./img/awards/2.png" alt="Facebook">
+            </div>
+            <div class="mr-[39px]">
+              <img src="./img/awards/3.png" alt="Avvo clients">
+            </div>
+            <div class="mr-[39px]">
+              <img src="./img/awards/4.png" alt="Lawyers">
+            </div>
+            <div class="mr-[39px]">
+              <img src="./img/awards/5.png" alt="Google">
+            </div>
+            <div>
+              <img src="./img/awards/6.png" alt="Super Lawyers">
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute right-[0px] bottom-0 border-b-[5px] border-secondary w-[1220px]"></div>
+
+  </section>
+
+  <!-- Personal Injury Lawyers -->
+  <section class="bg-[#F0EFEF]">
+    <div class="container w-full max-w-[1492px] my-0 mx-auto px-2">
+      <div class="flex py-[122px]">
+        <div class="flex flex-col w-[420px] text-[#707070] text-2xl">
+          <p class="mb-12">Giddens Law Firm, a Personal Injury Boutique Law Firm Dedicated to Protecting
+            Mississippi’s Families</p>
+          <p>Were you injured due to someone else’s negligence?</p>
+        </div>
+
+        <div class="flex flex-col text-[#707070] text-2xl pl-[123px]">
+          <div class="flex flex-col">
+            <h2 class="inline-flex font text-6xl text-primary font-judson">Mississippi Personal Injury Lawyers</h2>
+            <div class="block border-b-8 border-secondary w-[138px]"></div>
+            <p class="w-[440px] mb-[34px] mt-[85px] font-[24px] leading-normal">Assisting Injured Victims Throughout the
+              State of
+              Mississippi</p>
+            <div class="w-[520px] mb-[49px] leading-5 text-base">
+              <p class="pb-2">An unexpected and unfortunate accident can lead to
+                difficult hurdles and
+                challenges
+                that you are unprepared to overcome.</p>
+              <p>
+                Following an accident, you may find yourself overwhelmed with medical expenses, debilitating pain,
+                difficulty returning
+                to work, and learning how to adjust to life post-accident.
+              </p>
+            </div>
+          </div>
+          <div class="w-[642px]">
+            <p class="text-2xl mb-10 text-primary font-bold">One of the biggest obstacles on your road to
+              recovery is
+              obtaining
+              compensation for
+              your injuries.</p>
+
+            <!--Read more -->
+            <div class="flex  text-primary text-base justify-end pr-8">
+              <a class="underline cursor-pointer">Read More</a>
+              <div class="flex ml-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+                  <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                    transform="translate(8750 4)" fill="#f8bb08" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--CLIENTS TESTIMONIALS -->
+  <section class="relative bg-#FAFAFA">
+    <div class="container w-full max-w-[1480px] my-0 mx-auto px-2">
+
+      <div class="flex flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex font text-6xl  text-primary mt-9 font-judson">Client Testimonials</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!-- TESTIMONIALS -->
+        <div class="pb-[90px] pt-[35px] mx-auto">
+          <div class="flex flex-wrap">
+            <!-- TESTIMONIALS-CARD--1 -->
+            <div class="border-[3px] border-secondary max-w-[454px] max-h-[332px]">
+              <div class="flex flex-col py-6 pl-[18px] pr-9 ">
+
+                <div class="flex items-center justify-between">
+
+                  <div class="pr-[187.5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="193.5" height="32.092" viewBox="0 0 193.5 32.092">
+                      <g id="Group_149" data-name="Group 149" transform="translate(-278 -4444.14)">
+                        <path id="Icon_metro-star-full" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(275.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-2" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(315.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-3" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(355.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-4" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(395.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-5" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(435.429 4441.688)" fill="#f8bb08" />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.334" height="29.628" viewBox="0 0 37.334 29.628">
+                      <path id="Path_22" data-name="Path 22"
+                        d="M38.409,7.762l-9.3,29.629H21.269L28.444,7.762Zm-20.2,0L8.913,37.39H1.074L8.448,7.762Z"
+                        transform="translate(-1.074 -7.762)" fill="#f8bb08" />
+                    </svg>
+                  </div>
+                </div>
+
+                <p class=" py-5 w-[400px] text-base leading-5">
+                  Baskin and his team were instrumental in helping me resolve my personal injury case last year. I was
+                  involved in a wreck
+                  which landed me in the emergency room with serious injuries. Baskin recovered enough to ensure that I
+                  would be covered
+                  for all of my medical expenses I had over the previous year, and all future expenses that could arise
+                  in the future.
+                </p>
+
+                <div class="flex items-center justify-between py-12">
+
+                  <div class="pr-[180px] text-base leading-5 text-primary font-bold italic">Andrew</div>
+
+                  <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134"
+                      height="22" viewBox="0 0 134 22">
+                      <defs>
+                        <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
+                          viewBox="0 0 100 40">
+                          <image width="100" height="40"
+                            xlink:href="data:image/jpeg;base64,/9j/4QC8RXhpZgAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAABMCAwABAAAAAQAAAGmHBAABAAAAZgAAAAAAAABgAAAAAQAAAGAAAAABAAAABgAAkAcABAAAADAyMTABkQcABAAAAAECAwAAoAcABAAAADAxMDABoAMAAQAAAP//AAACoAQAAQAAAGQAAAADoAQAAQAAACgAAAAAAAAA/+ENGmh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLyc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczpBdHRyaWI9J2h0dHA6Ly9ucy5hdHRyaWJ1dGlvbi5jb20vYWRzLzEuMC8nPgogIDxBdHRyaWI6QWRzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogICAgIDxBdHRyaWI6Q3JlYXRlZD4yMDIyLTAyLTI0PC9BdHRyaWI6Q3JlYXRlZD4KICAgICA8QXR0cmliOkV4dElkPjkyNmFhNGVjLTAzOGItNDkwMy05OTdhLTQ1MzFhODQ3ZTFlZTwvQXR0cmliOkV4dElkPgogICAgIDxBdHRyaWI6RmJJZD41MjUyNjU5MTQxNzk1ODA8L0F0dHJpYjpGYklkPgogICAgIDxBdHRyaWI6VG91Y2hUeXBlPjI8L0F0dHJpYjpUb3VjaFR5cGU+CiAgICA8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvQXR0cmliOkFkcz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6cGRmPSdodHRwOi8vbnMuYWRvYmUuY29tL3BkZi8xLjMvJz4KICA8cGRmOkF1dGhvcj5hZm9ydGlnYXM8L3BkZjpBdXRob3I+CiA8L3JkZjpEZXNjcmlwdGlvbj4KCiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogIHhtbG5zOnhtcD0naHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyc+CiAgPHhtcDpDcmVhdG9yVG9vbD5DYW52YTwveG1wOkNyZWF0b3JUb29sPgogPC9yZGY6RGVzY3JpcHRpb24+CjwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9J3cnPz7/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAoAGQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6porH8SeILTQLVZLlZppZM+VBAu53x1wPQdya57R/iJa3l4sN9pl/pyOQqzTJmME9NxH3fr0rWNGco8yWhlKvThLlk9TuaKr399a6fb+ffXEVvDuCb5XCjJOAMnuTVisjUKKKKACiiigAooooAKKKhS6t5LqS2SaNriMBnjDfMoPQkUATUUUUAeQ/FpLuDxtodypdbd0WFWHTO87h+IIrP+JmxbCytLFwZ5pNrxI2Wb+7x9a9j1TTrPVbRrbULeOeAnO1x0PqD2PuKyNG8F6Do94LuysFFyPuySO0hX6bicV208TBckpLWP4nBUws3zxi9J/gc98UILlPhvaxypJLcRS2hlCKXbKuu44HJ6Gqvi/xhbanp9qujjWADciOSePzrNYsqSN7eWWIOOgHWvTaK427u53JWVjw6HUfGF3pGjxQ3eoi61e3e1EpUg28kUxPmNwMEx8Z4zSy+IvFMGnjxEXvgmqSS6fDYyDCwyFFWKQA9P3iv+de4VUvtNtL+S1kvIFma1lE8JbPyOBgMPfk0DPJIbjxPZ+MI7C61a5jkt7qCGH7QZWjuYMAMcLGVYsd2WLAg+lJG2tjwR/aNz4h1SC7nvnTy5hIF8pHfCbkQsm4fx/QV6g2jSC5MkWp3scZfcYg+RjOcDPQdvpUd3o93NLuj1e7iU8FV7DnGPfnqfSkByOk6w95pejDUpdYsbHyJGuDI7mbzC37sPIFB2ldxBwO2fe2t5dfbsR3V+2p/bVSK3O4xNa5HzEYxjZli3Xd+VdLLo0ryBk1O8jwqA7W+8VHU/WpLXSZYZ0kfU7yUKdxVm4J56+3PStVUSVrGEqLk27nJ6TZ6hOdAFzqWr4voJWu8ysvKgFR0+Tr2wTXUeEHnl8P2kl6Xe52lXeRcO2GIBPvgCoF8PTjgazqKoFICK+AD2PrU76LIzhhqt+px822QDPygentn6mlOpzq1h06PI73/rQ2aKitIWt7WKJpZJmRQpkkOWb3PvRWZsS0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z" />
+                        </pattern>
+                      </defs>
+                      <rect id="_1" data-name="1" width="134" height="22" fill="url(#pattern)" />
+                    </svg>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS-CARD--2 -->
+            <div class=" border-[3px] border-secondary max-w-[454px] mx-9">
+              <div class="flex flex-col py-6 pl-[18px] pr-9">
+
+                <div class="flex items-center justify-between">
+
+                  <div class="pr-[187.5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="193.5" height="32.092" viewBox="0 0 193.5 32.092">
+                      <g id="Group_149" data-name="Group 149" transform="translate(-278 -4444.14)">
+                        <path id="Icon_metro-star-full" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(275.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-2" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(315.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-3" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(355.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-4" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(395.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-5" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(435.429 4441.688)" fill="#f8bb08" />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.334" height="29.628" viewBox="0 0 37.334 29.628">
+                      <path id="Path_22" data-name="Path 22"
+                        d="M38.409,7.762l-9.3,29.629H21.269L28.444,7.762Zm-20.2,0L8.913,37.39H1.074L8.448,7.762Z"
+                        transform="translate(-1.074 -7.762)" fill="#f8bb08" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <p class=" py-5 w-[400px] text-base leading-5">
+                    I am truly blessed that God placed Giddens Law Firm in my path after a horrific accident from being
+                    hit by a car while
+                    riding my bike. Being a forensic accountant I have dealt with many attorneys related to personal
+                    injury cases.
+                  </p>
+                  <p class=" py-5 w-[400px] text-base leading-5 pb-1">
+                    I can honestly say that John and his staff are top notch when it comes to knowing the law and
+                    advocating for their
+                    clients. I would recommend them over any other firm. They left no stone unturned and fought tooth
+                    and nail for my case.
+                    What impressed me the most about this firm was the way they presented themselves with integrity and
+                    vigilance.
+                  </p>
+                  <p class=" py-5 w-[400px] text-base leading-5 pb-1">
+                    After suffering from a brain injury and multiple broken bones I had severe anxiety. John and his
+                    staff always made me
+                    feel comfortable. It was a huge relief for me to know they were taking care of everything and I
+                    could trust them. I knew
+                    they had my best interest at heart.
+                  </p>
+                </div>
+
+
+                <div class="flex items-center justify-between py-12">
+
+                  <div class="pr-[180px] text-base leading-5 text-primary font-bold italic">Pamela Anderson</div>
+
+                  <div>
+                    <img src="./img/google.png" alt="Google logo">
+                  </div>
+                </div>
+
+                <div class="flex  text-primary text-base">
+                  <a class="underline cursor-pointer bold">See Our Perfect Rating on Google</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- TESTIMONIALS-CARD--3 -->
+            <div class=" border-[3px] border-secondary max-w-[454px] max-h-[332px]">
+              <div class="flex flex-col py-6 pl-[18px] pr-9  ">
+
+                <div class="flex items-center justify-between">
+
+                  <div class="pr-[187.5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="193.5" height="32.092" viewBox="0 0 193.5 32.092">
+                      <g id="Group_149" data-name="Group 149" transform="translate(-278 -4444.14)">
+                        <path id="Icon_metro-star-full" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(275.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-2" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(315.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-3" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(355.429 4441.457)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-4" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(395.429 4441.688)" fill="#f8bb08" />
+                        <path id="Icon_metro-star-full-5" data-name="Icon metro-star-full"
+                          d="M36.071,14.853,24.5,13.171,19.321,2.683,14.145,13.171,2.571,14.853l8.375,8.164L8.969,34.543,19.321,29.1l10.352,5.442L27.7,23.016l8.375-8.164Z"
+                          transform="translate(435.429 4441.688)" fill="#f8bb08" />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.334" height="29.628" viewBox="0 0 37.334 29.628">
+                      <path id="Path_22" data-name="Path 22"
+                        d="M38.409,7.762l-9.3,29.629H21.269L28.444,7.762Zm-20.2,0L8.913,37.39H1.074L8.448,7.762Z"
+                        transform="translate(-1.074 -7.762)" fill="#f8bb08" />
+                    </svg>
+                  </div>
+                </div>
+
+                <p class=" py-5 w-[400px] text-base leading-5">
+                  I was fairly new to the area when i had my accident, talked to a few lawyers whom had visited me in my
+                  home. Then John
+                  and Baskin came talked to me about my case, he cares about my recovery makes sure i am able to make it
+                  to therapy,
+                  doctor appts. etc. The best thing is i can call him day or night and he is there, I LOVE THIS LAW
+                  FIRM,
+                </p>
+
+                <div class="flex justify-between py-12">
+
+                  <div class="pr-[180px] text-base leading-5 text-primary font-bold italic">Tony</div>
+
+                  <div>
+                    <img src="./img/avvo.png" alt="Avvo Logo">
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="absolute right-[0px] bottom-0 border-b-[5px] border-secondary w-[1220px]"></div>
+        </div>
+
+  </section>
+
+
+  <!-- OUR PERSONAL INJURY LAW -->
+  <section class="bg-#FAFAFA relative">
+
+    <div class="container w-full max-w-[1480px] my-0 mx-auto px-2">
+      <div class="flex flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex text-6xl  text-primary mt-[110px]">Our Personal Injury Law <br> Areas of
+            Practice
+          </h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!-- COMPONENTS -->
+        <div class="pb-[90px] pt-[35px]">
+          <div class="grid gap-10 grid-cols-3">
+            <!-- COMPONENT--1 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/1.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Unum ERISA & Long-term Denials & Wrongful
+                Termination
+                of Claim</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--2 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/5.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Auto Accidents</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img class="pr-4" src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--3 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/9.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Bicycle Accidents</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--4 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/2.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Traumatic Brain Injuries</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--5 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/6.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Celebral Palsy & Birth Injuries</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--6 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/10.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Motocycle Accidents</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--7 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/3.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Products Liability</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--8 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/7.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Trucking Accidents</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--9 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/11.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Trust Litigation</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--10 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/4.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Workplace Injuries</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+            <!-- COMPONENT--11 -->
+            <div class="relative pt-9 pb-14 pl-7 pr-4 flex items-center bg-[#F0EFEF]">
+              <div>
+                <img class="pr-4" src="./img/components/8.png" alt="file">
+              </div>
+              <h6 class="w-[331px] text-2xl font-bold text-primary ">Wrongful Death</h6>
+              <div class="absolute right-0 bottom-0 pr-3 pb-2">
+                <img src="./img/components/+.png" alt="Plus sign">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="absolute right-[0px] bottom-0 border-b-[5px] border-secondary w-[1220px]"></div>
+    </div>
+
+  </section>
+
+  <!--Meet Our Attorneys -->
+  <section class="bg-[#F0EFEF]">
+    <div class="container w-full max-w-[1484px] pl-[37px] my-0 mx-auto">
+      <div class="flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex text-6xl  text-primary mt-[110px]">Meet Our Attorneys</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!-- PICTURE CENTER AND TEXT RIGHT -->
+        <div class="flex pt-4">
+
+          <div class="items-center ml-[500px] pb-[148px] mr-16">
+            <img src="./img/pic2.png" alt="Lawyer in suit">
+          </div>
+
+          <div class="w-[440px]">
+            <h6 class="text-primary text-2xl ">Mississippi Personal Injury Attorney <strong>John D. Giddens</strong>
+            </h6>
+            <p class=" pb-2 text-base leading-5">
+              John Giddens is the founding member of Giddens Law Firm. He established the firm in 1999 in Jackson,
+              Mississippi with a
+              dedication to those who cannot otherwise help themselves.
+            </p>
+            <p class=" pb-2 text-base leading-5">
+              Mr. Giddens is a victim’s rights advocate who chooses to represent the interests of individuals over
+              corporations.
+            </p>
+            <p class=" pb-2 text-base leading-5">
+              His practice is devoted to helping Mississippians <strong>seek justice.</strong>
+            </p>
+
+            <!--Read more -->
+            <div class="flex  text-primary text-base mt-20">
+              <a class="underline cursor-pointer">Read More</a>
+              <div class="flex ml-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+                  <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                    transform="translate(8750 4)" fill="#f8bb08" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--Recent News -->
+  <section class="bg-[#FAFAFA]">
+    <div class="container w-full max-w-[1528px] pl-[59px] pb-[116px] my-0 mx-auto">
+      <div class="flex-col">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex text-6xl  text-primary mt-[110px]">Recent News</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+        <!--CARD--ROW-1 -->
+        <div class="flex rounded border-2 border-[#F0EFEF] ml-auto mb-[51px] justify-end max-w-[920px] ">
+
+          <div class="flex flex-col mt-[45px] max-w-[400px]">
+            <span class="text-[#C6C6C6] text-sm">July 12, 2021</span>
+            <h6 class="text-primary text-2xl ">$500,000 Settlement for and injured passenger in a truck accident case
+            </h6>
+            <p class=" pb-10 text-base leading-5">
+              Mr. Giddens is a victim’s rights advocate who chooses to represent the interests of individuals over
+              corporations.
+            </p>
+            <!--Read more -->
+            <div class="flex  text-primary text-base mt-20">
+              <a class="underline cursor-pointer">Read More</a>
+              <div class="flex ml-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+                  <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                    transform="translate(8750 4)" fill="#f8bb08" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-10 pr-[34px] pl-10">
+            <img src="./img/Image 9.png" alt="Rain teardrop">
+          </div>
+
+        </div>
+        <!--CARDS---ROW---2-->
+        <div class="flex mb-10">
+          <div class="flex rounded border-2 border-[#F0EFEF] ml-[69px] pl-10 mr-10 max-w-[440px] ">
+
+            <div class="flex flex-col mt-[45px] max-w-[400px]">
+              <span class="text-[#C6C6C6] text-sm">November 2, 2020</span>
+              <h6 class="text-primary text-2xl ">The sudden emergency defense in Mississippi 18-wheeler truck accident
+                claims
+              </h6>
+              <p class=" pb-10 text-base leading-5">
+                Lawyers who handle automobile accident cases should be sure to understand that they will likely receive
+                extremely
+                unusual and creative explanations from defendants as to how automobile accidents happen.
+              </p>
+              <!--Read more -->
+              <div class="flex  text-primary text-base mt-20">
+                <a class="underline cursor-pointer">Read More</a>
+                <div class="flex ml-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+                    <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                      transform="translate(8750 4)" fill="#f8bb08" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex rounded border-2 border-[#F0EFEF] pl-10 mr-10 max-w-[440px] ">
+
+            <div class="flex flex-col mt-[45px] max-w-[400px]">
+              <span class="text-[#C6C6C6] text-sm">February 5, 2021</span>
+              <h6 class="text-primary text-2xl ">Common Truck Accidents Caused by Trucker Negligence
+              </h6>
+              <p class=" pb-10 text-base leading-5">
+                Trucking accidents are often caused by negligence and driver error. Some of the most common causes of
+                trucking accidents
+                include, without limitation, the following:
+              </p>
+              <!--Read more -->
+              <div class="flex  text-primary text-base mt-20">
+                <a class="underline cursor-pointer">Read More</a>
+                <div class="flex ml-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10.428" height="18.249" viewBox="0 0 10.428 18.249">
+                    <path id="Union_23" data-name="Union 23" d="M-8750,9.957h4.174V-4h2.084V9.957h4.17l-5.215,4.292Z"
+                      transform="translate(8750 4)" fill="#f8bb08" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--Recent News -->
+  <section class="bg-primary">
+    <div class="container w-full max-w-[1468px] pb-[240px] my-0 mx-auto">
+
+      <div class="flex">
+        <!-- HEADING -->
+        <div class="flex flex-col">
+          <h2 class="inline-flex text-6xl  text-light mt-[94px]">Contact Us</h2>
+          <div class="block border-b-8 border-secondary w-[138px] mt-5"></div>
+        </div>
+
+
+        <form class="mx-auto w-full max-w-lg mt-[111px]">
+          <div class="flex flex-col">
+
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-secondary text-xs font-bold mb-2" for="grid-first-name">
+                Your Name
+              </label>
+              <input
+                class="appearance-none block w-full text-light border border-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name" type="text" placeholder="John Smith">
+            </div>
+
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-secondary text-xs font-bold mb-2" for="grid-first-name">
+                Your Email
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-secondary rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name" type="text" placeholder="johnsmith@gmail.com">
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+</body>
+
+
+</html>
