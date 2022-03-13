@@ -694,6 +694,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mb-\[9px\] {
+  margin-bottom: 9px;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-\[245px\] {
+  margin-left: 245px;
+}
+
+.ml-\[100px\] {
+  margin-left: 100px;
+}
+
+.ml-\[114px\] {
+  margin-left: 114px;
+}
+
 .block {
   display: block;
 }
@@ -734,6 +754,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
+}
+
+.min-h-\[140px\] {
+  min-height: 140px;
 }
 
 .w-full {
@@ -782,6 +806,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[331px\] {
   width: 331px;
+}
+
+.w-\[527px\] {
+  width: 527px;
+}
+
+.min-w-\[440px\] {
+  min-width: 440px;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-\[508px\] {
+  min-width: 508px;
+}
+
+.min-w-\[203px\] {
+  min-width: 203px;
 }
 
 .max-w-\[1656\] {
@@ -836,6 +880,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
+.max-w-\[1405px\] {
+  max-width: 1405px;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+.max-w-\[527px\] {
+  max-width: 527px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -858,6 +914,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           appearance: none;
 }
 
+.auto-rows-fr {
+  grid-auto-rows: minmax(0, 1fr);
+}
+
 .grid-cols-footer {
   grid-template-columns: 200px minmax(900px, 1fr) 100px;
 }
@@ -872,6 +932,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -898,6 +966,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.5rem;
 }
 
+.gap-y-\[25px\] {
+  row-gap: 25px;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -916,6 +988,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b-8 {
@@ -938,6 +1014,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 5px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-teal-400 {
   --tw-border-opacity: 1;
   border-color: rgb(45 212 191 / var(--tw-border-opacity));
@@ -955,6 +1035,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#F0EFEF\] {
   --tw-border-opacity: 1;
   border-color: rgb(240 239 239 / var(--tw-border-opacity));
+}
+
+.border-\[\#555\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(85 85 85 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -1059,6 +1144,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-\[25px\] {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .pl-3 {
@@ -1175,6 +1270,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[162px\] {
   padding-bottom: 162px;
+}
+
+.pb-\[101px\] {
+  padding-bottom: 101px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .font-body {
@@ -1301,6 +1404,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(198 198 198 / var(--tw-text-opacity));
 }
 
+.text-\[\#555\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1335,14 +1443,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.focus\:border-4:focus {
+  border-width: 4px;
+}
+
+.focus\:border-2:focus {
+  border-width: 2px;
+}
+
+.focus\:border-secondary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 187 8 / var(--tw-border-opacity));
+}
+
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.focus\:text-secondary:focus {
+  --tw-text-opacity: 1;
+  color: rgb(248 187 8 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:outline-4:focus {
+  outline-width: 4px;
+}
+
+.focus\:outline-secondary:focus {
+  outline-color: #F8BB08;
 }
 
 @media (min-width: 768px) {
